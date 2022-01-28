@@ -50,7 +50,7 @@ const Header = () => {
                     </Typography>
                 </Toolbar>
 
-                <Select variant='outlined'
+                {/* <Select variant='outlined'
                         style={{
                             width: 100,
                             height: 40,
@@ -61,7 +61,7 @@ const Header = () => {
                     onChange={(e) => setCurrency(e.target.value)} >
                     <MenuItem value={'USD'}>USD</MenuItem>
                     <MenuItem value={"CAD"}>CAD</MenuItem>
-                </Select>
+                </Select> */}
 
             </Container>
         </AppBar>
