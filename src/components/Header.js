@@ -35,7 +35,7 @@ const Header = () => {
     return( 
         <ThemeProvider theme={darkTheme}>
         <AppBar color='transparent' position='static'>
-            <Container>
+            <Container >
                 <Toolbar>
                     <Typography 
                     onClick={() => history.push('/')}
@@ -43,14 +43,14 @@ const Header = () => {
                     variant='h4'
                     style={{
                         marginTop: 25,
-                        marginBottom: -15,
+                        marginBottom: 15,
                         fontFamily: "Montserrat",
                     }}>
                     Dark Alley
                     </Typography>
                 </Toolbar>
 
-                {/* <Select variant='outlined'
+                <Select variant='outlined'
                         style={{
                             width: 100,
                             height: 40,
@@ -61,7 +61,7 @@ const Header = () => {
                     onChange={(e) => setCurrency(e.target.value)} >
                     <MenuItem value={'USD'}>USD</MenuItem>
                     <MenuItem value={"CAD"}>CAD</MenuItem>
-                </Select> */}
+                </Select> 
 
             </Container>
         </AppBar>
