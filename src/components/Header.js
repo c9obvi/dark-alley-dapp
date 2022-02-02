@@ -2,6 +2,7 @@ import { AppBar, Container, createTheme, makeStyles, MenuItem, Select, ThemeProv
 import React from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { CryptoState } from '../CryptoContext';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const useStyles = makeStyles(() => ({
     title: {
@@ -10,7 +11,14 @@ const useStyles = makeStyles(() => ({
         fontFamily: "Montserrat",
         fontWeight: "bold",
         cursor: "pointer",
-    }
+    },
+    // exchange: {
+    //     flex: 1,
+    //     color: "white",
+    //     fontFamily: "Montserrat",
+    //     fontWeight: "bold",
+    //     cursor: "pointer",
+    // }
 }))
 
 const Header = () => {
@@ -48,6 +56,24 @@ const Header = () => {
                     }}>
                     Dark Alley
                     </Typography>
+                    <Typography 
+                    onClick={() => history.push('/')}
+                    className={classes.exchange} 
+                    variant='subtitle2'
+                    style={{
+                        textAlign: "center",
+                        color: "white",
+                        fontWeight: "light",
+                        marginBottom: 15,
+                        fontFamily: "Montserrat",
+                        cursor: "pointer"
+                    }}> 
+            <li>
+            <Link smooth to={'/#exolix'}>
+                 NON-KYC Exchange
+            </Link>
+          </li>
+                </Typography>
                 </Toolbar>
 
                 <Select variant='outlined'
