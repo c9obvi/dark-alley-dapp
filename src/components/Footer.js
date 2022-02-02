@@ -69,7 +69,7 @@ const Footer = () => {
                 </Typography>
 
             <p align="center">
-            <iframe title="Exolix widget" src="https://exolix.com/widget/BTC-WBTC?a=1&locale=en&t=iItvGsehMVWV9RRFiuu7ZoN2rvpv1p8jhNQPeAKM1Q0NGKPs8c7ALHqwu3VC" width="560px" height="376px" frameBorder="0" scrolling="no" display="block"
+            <iframe title="Exolix widget" src="https://exolix.com/widget/BTC-WBTC?a=1&locale=en&t=iItvGsehMVWV9RRFiuu7ZoN2rvpv1p8jhNQPeAKM1Q0NGKPs8c7ALHqwu3VC" width="315px" height="268px" frameBorder="0" scrolling="no" display="block"
              justifyContent= "center"></iframe>
             </p>
             <br/>
