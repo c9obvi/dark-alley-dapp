@@ -66,3 +66,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify USE YARN BUILD!! do not build with npm but is safe to test in npm
+
+
+## thank you for stopping by
