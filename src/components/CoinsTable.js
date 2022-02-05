@@ -86,7 +86,7 @@ const classes = useStyles();
             onChange={(e) => setSearch(e.target.value)}
             />
 
-            <TableContainer>
+            <TableContainer class="data-table">
                 {
                     loading ? (
                         <LinearProgress style={{ backgroundColor: "magenta" }}/>
@@ -100,6 +100,7 @@ const classes = useStyles();
                                                 color: "black",
                                                 fontWeight: "700",
                                                 fontFamily: "Montserrat",
+                                                textAlign: "center"
                                             }}  
                                           key={head}
                                           align={head === "Coin" ? "" : "left"}
@@ -124,14 +125,14 @@ const classes = useStyles();
                                                 scope="row"
                                                 style={{
                                                     display: "flex",
-                                                    gap: 15,
+                                                    gap: 8,
                                                 }}
                                                 >
                                                     <img 
                                                         src={row.image}
                                                         alt={row.name}
                                                         height="50"
-                                                        styl={{marginBottom: 10}}
+                                                        style={{marginBottom: 10}}
                                                         />
                                                         <div
                                                         style={{ display: "flex", flexDirection: "column"}}
@@ -144,27 +145,27 @@ const classes = useStyles();
                                                             >
                                                                 {row.symbol}
                                                             </span>
-                                                            <span style={{ color: "darkgrey"}}>{row.name}</span>
+                                                            <span style={{ color: "darkgrey", fontSize:15}}>{row.name}</span>
                                                         </div>
                                             </TableCell>
                                             <TableCell
-                                                align='right'>
-                                                {symbol}{" "}
-                                                {numberWithCommas(row.current_price.toFixed(2))}
+                                                align='ceneter' style={{textAlign:"center"}}>
+                                                {symbol}{""}{numberWithCommas(row.current_price.toFixed(2  ))}
                                             </TableCell>
                                             <TableCell
                                              align='right'
                                              style={{
                                                  color: profit > 0 ? "rgb(14, 203, 129)" : "red",
                                                  fontWeight: 500,
+                                                 textAlign: "center"
                                              }}
                                             >
                                                 {profit && "+"}
                                                 {row.price_change_percentage_24h.toFixed(2)}%
                                             </TableCell>
                                             <TableCell 
-                                            align='right'>
-                                            {symbol}{" "}
+                                            align='right' style={{textAlign:"center"}}>
+                                            {symbol}{""}
                                             {numberWithCommas(
                                                 row.market_cap.toString().slice(0, -6)
                                             )}

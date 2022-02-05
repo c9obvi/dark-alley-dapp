@@ -7,7 +7,54 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.data-table{
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: gold;
 }
+
+.exTitle {
+  text-align: center;
+  padding: -25;
+}
+/* this works perfect for phones
+.even-columns {
+  display: flex;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 5;
+} */
+
+.even-columns {
+  display: flex;
+}
+.even-columns > * {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 25px;
+}
+
+.even-columnsT {
+  display: flex;
+  padding-bottom: -23%;
+}
+.even-columnsT > * {
+  flex-basis: 100%;
+  text-align: center;
+  padding-bottom: -22%;
+}
+
+
+.cexBox{
+  padding: -25;
+  padding-bottom: -500;
+}
+

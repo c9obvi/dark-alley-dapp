@@ -4,6 +4,7 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter, Route, HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
+
 const useStyles = makeStyles(() => ({
     banner:{
         backgroundImage: "url(./banner3.jpg)",
@@ -24,6 +25,10 @@ const useStyles = makeStyles(() => ({
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
+    },
+    evenColumns: {
+        display: "flex",
+        
     },
 }));
 
@@ -67,14 +72,30 @@ const Footer = () => {
                     <HashRouter basename="/#exolix" />
                         NON-KYC Exchange Partner!
                 </Typography>
-
             <p align="center">
             <iframe title="Exolix widget" src="https://exolix.com/widget/BTC-ETH?&locale=en&t=iItvGsehMVWV9RRFiuu7ZoN2rvpv1p8jhNQPeAKM1Q0NGKPs8c7ALHqwu3VC" width="315px" height="268px" frameBorder="0" scrolling="no" display="block"
              justifyContent= "center"></iframe>
             </p>
             <br/>
             <br/>
+             {/* adding 3 box section */}
+            <div class ="cexBox">
+                <div class="even-columnsT">
+                    <h1 class="exTitle">NO LIMIT</h1>
+                    <h1 class="exTitle">NO KYC</h1>
+                </div>
+                    <div class="even-columns">
+                        <div class="coll"> We do not have maximum limits, <br/>which allows everyone to exchange any amount of cryptocurrencies</div>
+                        
+                        <div class="coll"> We do not require to go through KYC process! <br/>Thus anyone can make an exchange without providing any personal data</div>
+                    </div>
+            <br/>
+            <br/>
+            </div>
+            
       </Container>
+
+      <br/>
   </div>;
 };
 
