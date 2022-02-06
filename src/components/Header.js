@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { CryptoState } from '../CryptoContext';
 import { HashLink as Link } from 'react-router-hash-link';
 
+
 const useStyles = makeStyles(() => ({
     title: {
         flex: 1,
@@ -11,7 +12,14 @@ const useStyles = makeStyles(() => ({
         fontFamily: "Montserrat",
         fontWeight: "bold",
         cursor: "pointer",
+        
     },
+    xButton: {
+        color: "gold",
+        fontWeight: "bold",
+        margin: -25,
+
+    }
     // exchange: {
     //     flex: 1,
     //     color: "white",
@@ -50,8 +58,9 @@ const Header = () => {
                     className={classes.title}
                     variant='h4'
                     style={{
-                        marginTop: 25,
-                        marginBottom: 15,
+                        marginTop: 1,
+                        marginBottom: 10,
+                        paddingTop: 20,
                         fontFamily: "Montserrat",
                     }}>
                     Dark Alley
@@ -68,20 +77,33 @@ const Header = () => {
                         fontFamily: "Montserrat",
                         cursor: "pointer"
                     }}> 
-            <li>
-            <Link smooth to={'/#exolix'}>
+            
+            <Link smooth to={'/#exolix'}  style={{
+                            display: "flex",
+                            width: "100%",
+                            height: 40,
+                            marginLeft: "14%",
+                            color: "gold",
+                            paddingTop: "45px",
+                            position: "relative",
+                            left: "12px"
+                }}>
                  NON-KYC Exchange
             </Link>
-          </li>
+          
                 </Typography>
                 </Toolbar>
 
                 <Select variant='outlined'
                         style={{
+                            position: "absolute",
+                            top: "5px",
+                            right: "12px",
+                            display: "flex",
                             width: 100,
                             height: 40,
                             marginLeft: "80%",
-                            marginTop: -15,
+                            marginBottom: 15,
                 }}
                     value={currency}
                     onChange={(e) => setCurrency(e.target.value)} >

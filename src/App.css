@@ -7,14 +7,22 @@
   scroll-behavior: smooth;
 }
 
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
 .data-table{
-  max-width: 100%;
-  flex-basis: 100%;
+  max-width: auto;
+  padding-right: -25;
+  flex-basis: 50%;
+  
+}
+
+.data-table > * {
+  max-width: auto;
+  flex-basis: 50%;
 }
 
 a {

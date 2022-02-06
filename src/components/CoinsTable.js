@@ -100,10 +100,11 @@ const classes = useStyles();
                                                 color: "black",
                                                 fontWeight: "700",
                                                 fontFamily: "Montserrat",
-                                                textAlign: "center"
+                                                textAlign: "auto",
+                                                size: "small",
                                             }}  
                                           key={head}
-                                          align={head === "Coin" ? "" : "left"}
+                                          align={head === "Coin" ? "" : "center"}
                                           >
                                               {head}
                                         </TableCell> ))}
@@ -125,7 +126,7 @@ const classes = useStyles();
                                                 scope="row"
                                                 style={{
                                                     display: "flex",
-                                                    gap: 8,
+                                                    gap: 5,
                                                 }}
                                                 >
                                                     <img 
@@ -164,7 +165,7 @@ const classes = useStyles();
                                                 {row.price_change_percentage_24h.toFixed(2)}%
                                             </TableCell>
                                             <TableCell 
-                                            align='right' style={{textAlign:"center"}}>
+                                            align='center' style={{textAlign:"center"}}>
                                             {symbol}{""}
                                             {numberWithCommas(
                                                 row.market_cap.toString().slice(0, -6)
