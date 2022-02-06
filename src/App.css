@@ -14,6 +14,7 @@ html, body {
 
 .data-table{
   max-width: 100%;
+  flex-basis: 100%;
 }
 
 a {
@@ -39,7 +40,7 @@ a {
 .even-columns > * {
   flex-basis: 100%;
   text-align: center;
-  padding: 25px;
+  padding: 10px;
 }
 
 .even-columnsT {
