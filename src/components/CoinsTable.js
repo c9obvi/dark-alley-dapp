@@ -94,7 +94,7 @@ const classes = useStyles();
                         <Table>
                                <TableHead style={{ backgroundColor: "magenta"}}>
                                 <TableRow>
-                                        {["coin", "Price", "24H Change", "Market Cap"].map((head) => (
+                                        {["coin", "Price", "24H Change",].map((head) => (
                                         <TableCell
                                             style={{
                                                 color: "black",
@@ -164,14 +164,14 @@ const classes = useStyles();
                                                 {profit && "+"}
                                                 {row.price_change_percentage_24h.toFixed(2)}%
                                             </TableCell>
-                                            <TableCell 
+                                            {/* <TableCell 
                                             align='center' style={{textAlign:"center"}}>
                                             {symbol}{""}
                                             {numberWithCommas(
                                                 row.market_cap.toString().slice(0, -6)
                                             )}
                                             M
-                                            </TableCell>
+                                            </TableCell> */}
                                         </TableRow>
                                         )
                                     })}

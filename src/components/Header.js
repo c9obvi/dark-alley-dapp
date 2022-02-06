@@ -86,7 +86,10 @@ const Header = () => {
                             color: "gold",
                             paddingTop: "45px",
                             position: "relative",
-                            left: "12px"
+                            left: "12px",
+                            paddingBottom: "20px",
+                            marginTop: "20px",
+                            marginRight: '15px'
                 }}>
                  NON-KYC Exchange
             </Link>
@@ -97,7 +100,7 @@ const Header = () => {
                 <Select variant='outlined'
                         style={{
                             position: "absolute",
-                            top: "5px",
+                            top: "10px",
                             right: "12px",
                             display: "flex",
                             width: 100,
