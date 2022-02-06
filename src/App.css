@@ -36,11 +36,13 @@ a {
 
 .even-columns {
   display: flex;
+  margin-bottom: -2%;
+  margin-top: -2%;
 }
 .even-columns > * {
   flex-basis: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .even-columnsT {
@@ -57,5 +59,6 @@ a {
 .cexBox{
   padding: -25;
   padding-bottom: -500;
+  margin-top: -10%;
 }
 
