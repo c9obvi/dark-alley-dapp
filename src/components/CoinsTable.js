@@ -79,12 +79,13 @@ const classes = useStyles();
             }}>
                 Crypto Currency by Market Cap
             </Typography>
-            <TextField 
+            {/* Temporary disable of the search bar */}
+            {/* <TextField 
             label="Search For a Crypto Asset.." 
             variant="outlined"
             style={{marginBottom: 20, width: "100%"}}
             onChange={(e) => setSearch(e.target.value)}
-            />
+            /> */}
 
             <TableContainer class="data-table">
                 {
@@ -124,16 +125,19 @@ const classes = useStyles();
                                             <TableCell 
                                                 component="th" 
                                                 scope="row"
+                                                align='center'
                                                 style={{
                                                     display: "flex",
                                                     gap: 5,
+                                                    textAlign: "center"
+                                                    
                                                 }}
                                                 >
                                                     <img 
                                                         src={row.image}
                                                         alt={row.name}
                                                         height="50"
-                                                        style={{marginBottom: 10}}
+                                                        style={{marginBottom: 10, textAlign: "center"}}
                                                         />
                                                         <div
                                                         style={{ display: "flex", flexDirection: "column"}}

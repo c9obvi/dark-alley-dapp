@@ -1,8 +1,11 @@
-import { AppBar, Container, createTheme, makeStyles, MenuItem, Select, ThemeProvider, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Container, createTheme, makeStyles, MenuItem, Select, ThemeProvider, 
+    Button, Toolbar, Typography, Icon } from '@material-ui/core';
 import React from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { CryptoState } from '../CryptoContext';
-import { HashLink as Link } from 'react-router-hash-link';
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+
+
 
 
 const useStyles = makeStyles(() => ({
@@ -12,6 +15,7 @@ const useStyles = makeStyles(() => ({
         fontFamily: "Montserrat",
         fontWeight: "bold",
         cursor: "pointer",
+        marginLeft: -18,
         
     },
     xButton: {
@@ -58,8 +62,8 @@ const Header = () => {
                     className={classes.title}
                     variant='h4'
                     style={{
-                        marginTop: 1,
-                        marginBottom: 10,
+                        marginTop: 5,
+                        marginBottom: 30,
                         paddingTop: 20,
                         fontFamily: "Montserrat",
                     }}>
@@ -75,38 +79,38 @@ const Header = () => {
                         fontWeight: "light",
                         marginBottom: 15,
                         fontFamily: "Montserrat",
-                        cursor: "pointer"
+                        cursor: "pointer",
                     }}> 
             
-            <Link smooth to={'/#exolix'}  style={{
-                            display: "flex",
-                            width: "100%",
-                            height: 40,
-                            marginLeft: "14%",
-                            color: "gold",
-                            paddingTop: "45px",
-                            position: "relative",
-                            left: "12px",
-                            paddingBottom: "20px",
-                            marginTop: "20px",
-                            marginRight: '15px'
-                }}>
-                 NON-KYC Exchange
-            </Link>
           
                 </Typography>
                 </Toolbar>
-
+                <Button variant="contained" color="primary" href="/#exolix"  style={{
+                            position: "absolute",
+                            top: "50px",
+                            right: "25px",
+                            width: 120,
+                            height: 50,
+                            paddingBottom: 15,
+                            textAlign: "center",
+                            paddingTop: 15,
+                            marginTop: 10,
+                            color: "black",
+                            backgroundColor: "gold",
+                            fontWeight: "bold"                     
+                }}>
+                NON-KYC Exchange!
+                </Button>
                 <Select variant='outlined'
                         style={{
                             position: "absolute",
                             top: "10px",
-                            right: "12px",
+                            right: "25px",
                             display: "flex",
                             width: 100,
                             height: 40,
                             marginLeft: "80%",
-                            marginBottom: 15,
+                            marginBottom: 25,
                 }}
                     value={currency}
                     onChange={(e) => setCurrency(e.target.value)} >

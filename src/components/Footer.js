@@ -73,9 +73,10 @@ const Footer = () => {
                         NON-KYC Exchange Partner!
                 </Typography>
             <p align="center">
-            <iframe title="Exolix widget" src="https://exolix.com/widget/BTC-ETH?&locale=en&t=iItvGsehMVWV9RRFiuu7ZoN2rvpv1p8jhNQPeAKM1Q0NGKPs8c7ALHqwu3VC" width="315px" height="268px" frameBorder="0" scrolling="no" display="block"
+            <iframe title="Exolix widget" src="https://exolix.com/widget/ETH-BTC?&locale=en&t=iItvGsehMVWV9RRFiuu7ZoN2rvpv1p8jhNQPeAKM1Q0NGKPs8c7ALHqwu3VC" width="315px" height="268px" frameBorder="0" scrolling="no" display="block"
              justifyContent= "center"></iframe>
             </p>
+            <br/>
             <br/>
             <br/>
              {/* adding 3 box section */}
