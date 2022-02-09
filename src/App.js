@@ -21,7 +21,7 @@ function App() {
       <div className={classes.App}>
         <Header />
         <Route path='/' component={HomePage} exact/>
-        <Route path='/coin/:id' component={CoinPage} exact/>
+        <Route path='/coins/:id' component={CoinPage} exact/>
       </div>
     </BrowserRouter>
   )

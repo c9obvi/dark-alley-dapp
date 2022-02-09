@@ -37,10 +37,10 @@ const Banner = () => {
                     variant='h3'
                     style={{
                         fontWeight: "bold",
-                        marginBottom: 15,
+                        marginBottom: 5,
                         fontFamily: "Montserrat",
                     }}> 
-                        DARK ALLEY
+                        CRYPTO, DeFi, Metals & NFTs
                 </Typography>
                 <Typography 
                     variant='subtitle2'

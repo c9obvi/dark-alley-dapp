@@ -27,7 +27,7 @@ const [coins, setCoins] = useState([]);
 
     };
 
-    console.log(coins);
+    // console.log(coins);
 
     useEffect(() => {
         fetchCoins()
@@ -118,7 +118,7 @@ const classes = useStyles();
                                         const profit = row.price_change_percentage_24h > 0;
                                         return (
                                         <TableRow 
-                                             onClick={() => history.push('/coins/${row.id}')}
+                                             onClick={() => history.push("/coins/"+row.name.toLowerCase())}
                                              className={classes.row}
                                              key={row.name}               
                                             >
@@ -177,7 +177,7 @@ const classes = useStyles();
                                             M
                                             </TableCell> */}
                                         </TableRow>
-                                        )
+                                        );
                                     })}
                                 </TableBody>
                         </Table>

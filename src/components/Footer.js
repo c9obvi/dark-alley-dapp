@@ -1,8 +1,7 @@
 import { Container, makeStyles, Typography } from '@material-ui/core';
 import { findByLabelText } from '@testing-library/react';
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import { BrowserRouter, Route, HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 const useStyles = makeStyles(() => ({
@@ -73,8 +72,9 @@ const Footer = () => {
                         NON-KYC Exchange Partner!
                 </Typography>
             <p align="center">
-            <iframe title="Exolix widget" src="https://exolix.com/widget/ETH-BTC?&locale=en&t=iItvGsehMVWV9RRFiuu7ZoN2rvpv1p8jhNQPeAKM1Q0NGKPs8c7ALHqwu3VC" width="315px" height="268px" frameBorder="0" scrolling="no" display="block"
-             justifyContent= "center"></iframe>
+            <iframe title="Exolix widget" src="https://exolix.com/widget/ETH-BTC?&locale=en&t=iItvGsehMVWV9RRFiuu7ZoN2rvpv1p8jhNQPeAKM1Q0NGKPs8c7ALHqwu3VC" 
+            width="315px" height="268px" frameBorder="0" 
+            scrolling="no" display="block"justifyContent= "center"></iframe>
             </p>
             <br/>
             <br/>
