@@ -71,7 +71,7 @@ const classes = useStyles();
         ) : ( 
           <>
           
-          <Line 
+          {/* <Line 
           data={{
             labels:historicalData.map( (coin) => {
               let date = new Date(coin[0]);
@@ -82,7 +82,7 @@ const classes = useStyles();
             }),
           }}
           
-          />
+          /> */}
           </>
           )}
 
